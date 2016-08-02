@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>678e1f4b-92a9-42f4-a88f-46d97ea0c860</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>run.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+    <PythonWsgiHandler>app.wsgi_app</PythonWsgiHandler>
+    <Name>Flask</Name>
+    <RootNamespace>Flask</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".travis.yml" />
+    <Content Include="flask_website\static\approved.png" />
+    <Content Include="flask_website\static\badges\flask-powered.png" />
+    <Content Include="flask_website\static\badges\flask-project-s.png" />
+    <Content Include="flask_website\static\badges\i-wish.png" />
+    <Content Include="flask_website\static\badges\made-with-flask-s.png" />
+    <Content Include="flask_website\static\badges\powered-by-flask-s.png" />
+    <Content Include="flask_website\static\badges\unfortunately-not.png" />
+    <Content Include="flask_website\static\community.png" />
+    <Content Include="flask_website\static\edit-snippet.png" />
+    <Content Include="flask_website\static\extensions.png" />
+    <Content Include="flask_website\static\favicon.ico" />
+    <Content Include="flask_website\static\login.png" />
+    <Content Include="flask_website\static\logo.png" />
+    <Content Include="flask_website\static\logo\flask.eps" />
+    <Content Include="flask_website\static\logo\flask.pdf" />
+    <Content Include="flask_website\static\logo\flask.png" />
+    <Content Include="flask_website\static\logo\flask.svg" />
+    <Content Include="flask_website\static\mailinglist.js" />
+    <Content Include="flask_website\static\mailinglist.png" />
+    <Content Include="flask_website\static\mask.png" />
+    <Content Include="flask_website\static\new-snippet.png" />
+    <Content Include="flask_website\static\openid.png" />
+    <Content Include="flask_website\static\profile.png" />
+    <Content Include="flask_website\static\search.png" />
+    <Content Include="flask_website\static\ship.png" />
+    <Content Include="flask_website\static\snippets.png" />
+    <Content Include="flask_website\static\style.css" />
+    <Content Include="flask_website\static\twitter.png" />
+    <Content Include="flask_website\templates\404.html" />
+    <Content Include="flask_website\templates\community\badges.html" />
+    <Content Include="flask_website\templates\community\index.html" />
+    <Content Include="flask_website\templates\community\irc.html" />
+    <Content Include="flask_website\templates\community\layout.html" />
+    <Content Include="flask_website\templates\community\logos.html" />
+    <Content Include="flask_website\templates\community\poweredby.html" />
+    <Content Include="flask_website\templates\extensions\index.html" />
+    <Content Include="flask_website\templates\extensions\layout.html" />
+    <Content Include="flask_website\templates\general\change_openid.html" />
+    <Content Include="flask_website\templates\general\first_login.html" />
+    <Content Include="flask_website\templates\general\index.html" />
+    <Content Include="flask_website\templates\general\login.html" />
+    <Content Include="flask_website\templates\general\profile.html" />
+    <Content Include="flask_website\templates\general\search.html" />
+    <Content Include="flask_website\templates\layout.html" />
+    <Content Include="flask_website\templates\mailinglist\archive.html" />
+    <Content Include="flask_website\templates\mailinglist\index.html" />
+    <Content Include="flask_website\templates\mailinglist\layout.html" />
+    <Content Include="flask_website\templates\mailinglist\show_thread.html" />
+    <Content Include="flask_website\templates\snippets\category.html" />
+    <Content Include="flask_website\templates\snippets\delete_category.html" />
+    <Content Include="flask_website\templates\snippets\edit.html" />
+    <Content Include="flask_website\templates\snippets\edit_comment.html" />
+    <Content Include="flask_website\templates\snippets\index.html" />
+    <Content Include="flask_website\templates\snippets\layout.html" />
+    <Content Include="flask_website\templates\snippets\manage_categories.html" />
+    <Content Include="flask_website\templates\snippets\new.html" />
+    <Content Include="flask_website\templates\snippets\show.html" />
+    <Content Include="flask_website\templates\_twitter.html" />
+    <Content Include="flask_website\__init__.pyc" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="flask_website\database.py" />
+    <Compile Include="flask_website\docs.py" />
+    <Compile Include="flask_website\flaskystyle.py" />
+    <Compile Include="flask_website\listings\extensions.py" />
+    <Compile Include="flask_website\listings\projects.py" />
+    <Compile Include="flask_website\listings\releases.py" />
+    <Compile Include="flask_website\listings\__init__.py" />
+    <Compile Include="flask_website\openid_auth.py" />
+    <Compile Include="flask_website\search.py" />
+    <Compile Include="flask_website\utils.py" />
+    <Compile Include="flask_website\views\community.py" />
+    <Compile Include="flask_website\views\extensions.py" />
+    <Compile Include="flask_website\views\general.py" />
+    <Compile Include="flask_website\views\mailinglist.py" />
+    <Compile Include="flask_website\views\snippets.py" />
+    <Compile Include="flask_website\views\__init__.py" />
+    <Compile Include="flask_website\__init__.py" />
+    <Compile Include="run.py" />
+    <Compile Include="update-doc-searchindex.py" />
+    <Compile Include="websiteconfig.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="flask_website\" />
+    <Folder Include="flask_website\listings\" />
+    <Folder Include="flask_website\static\" />
+    <Folder Include="flask_website\static\badges\" />
+    <Folder Include="flask_website\static\logo\" />
+    <Folder Include="flask_website\templates\" />
+    <Folder Include="flask_website\templates\community\" />
+    <Folder Include="flask_website\templates\extensions\" />
+    <Folder Include="flask_website\templates\general\" />
+    <Folder Include="flask_website\templates\mailinglist\" />
+    <Folder Include="flask_website\templates\snippets\" />
+    <Folder Include="flask_website\views\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,6 @@
+Failed to initialize role.
+
+Exception:
+System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei AzureSetup.Program.ConfigureFastCgi()
+   bei AzureSetup.Program.Main(String[] args)

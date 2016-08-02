@@ -1,0 +1,7 @@
+C:\Users\KR_15_Worker_3\Source\Repos\-TFM_UAM\WebTestCreator\WebTestCreator\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\KR_15_Worker_3\Source\Repos\-TFM_UAM\WebTestCreator\WebTestCreator\bin\AzureSetup.cfg
+C:\Users\KR_15_Worker_3\Source\Repos\-TFM_UAM\WebTestCreator\WebTestCreator\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\KR_15_Worker_3\Source\Repos\-TFM_UAM\WebTestCreator\WebTestCreator\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\KR_15_Worker_3\Source\Repos\-TFM_UAM\WebTestCreator\WebTestCreator\bin\wfastcgi.py
+C:\Users\KR_15_Worker_3\Source\Repos\-TFM_UAM\WebTestCreator\WebTestCreator\obj\Release\web.config
+C:\Users\KR_15_Worker_3\Source\Repos\-TFM_UAM\WebTestCreator\WebTestCreator\obj\Release\web.debug.config
