@@ -94,15 +94,18 @@ import uartdevice
 import log
 import sys
 import msvcrt
+import xmlhandler
+import os
 
 #disable traceback
 __unittest = True
 
 class Run(unittest.TestCase):
     def setUp(self):
-        if comport is None:
-            raise Exception('Comport not defined: You are using a uart testcase via the ccid interface')
-        uartdevice.open_com(comport, baudrate)
+        xml = xmlhandler.Xml(os.path.dirname(os.path.abspath(__file__)), "testsettings.xml")
+        self.baudrate = xml.getBaudrate()
+        self.comport = xml.getComport()
+        uartdevice.open_com(self.comport, self.baudrate)
 
 
     def tearDown(self):
