@@ -109,7 +109,7 @@ class Run(unittest.TestCase):
 
 
     def tearDown(self):
-        if comport is not None:
+        if self.comport is not None:
             uartdevice.close_com()  
 
     """
